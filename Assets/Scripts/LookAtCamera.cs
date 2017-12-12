@@ -37,6 +37,7 @@ public class LookAtCamera : MonoBehaviour {
                     transform.RotateAround(target.transform.position, Vector3.right, Time.deltaTime * 60);
 
                 }
+              
             } 
         }
     }

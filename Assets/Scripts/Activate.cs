@@ -17,6 +17,7 @@ public class Activate : MonoBehaviour {
         if (Input.GetMouseButtonDown(0)){
             par.GetComponentInParent<pieceMove>().enabled = true;
             Debug.Log("work");
+            
         }
 	}
 }

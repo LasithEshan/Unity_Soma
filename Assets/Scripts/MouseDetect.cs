@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MouseDetect : MonoBehaviour 
 {
 	public bool objmove=false; //variable to check whether object is selected or not
+    public Text txt;
 
 
 	void Update () 
@@ -55,15 +57,19 @@ public class MouseDetect : MonoBehaviour
 		if (objmove==false & Input.GetMouseButtonDown (0)) 
 		{
 			objmove = true;
-			Debug.Log ("active");
+            Debug.Log("active");
+            txt.text = "Active";
 
 		}
 		else if (objmove==true & Input.GetMouseButtonDown (0)) 
 		{
 			objmove = false;
-			Debug.Log ("not active");
-		}
-	}
+            Debug.Log("not active");
+
+            txt.text = "Not Active";
+
+        }
+    }
 
 
 }
